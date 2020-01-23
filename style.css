@@ -1,0 +1,111 @@
+html {
+  box-sizing: border-box;
+  color: #202020;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.background {
+  background: #066999;
+  background-image: repeating-linear-gradient(-135deg, transparent 0, transparent 9px, rgba(255, 255, 255, 0.05) 0, rgba(255, 255, 255, 0.06) 10px), repeating-linear-gradient(-135deg, transparent 0, transparent 19px, rgba(255, 255, 255, 0.07) 0, rgba(255, 255, 255, 0.08) 20px), repeating-linear-gradient(-135deg, transparent 0, transparent 29px, rgba(255, 255, 255, 0.07) 0, rgba(255, 255, 255, 0.04) 30px);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__form {
+  background-color: #eaeaea;
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.app__heading {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.app_input-text,
+.app_input-textarea {
+  width: 100%;
+  padding: 10px;
+}
+
+.app_input-textarea {
+  height: 80px;
+}
+
+.app__label {
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-bottom: 2px;
+}
+
+.app__hidden-upload {
+  position: absolute;
+  z-index: -1;
+  outline: 0;
+}
+
+.app__uploads {
+  display: flex;
+  justify-content: space-between;
+}
+
+.upload__wrapper {
+  flex: 0 0 45%;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.app__upload-label {
+  background-color: #202020;
+  color: #fff;
+  padding: 14px;
+  width: 100%;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+.app__upload-label:hover {
+  cursor: pointer;
+  opacity: .9;
+}
+.app__upload-label .fa {
+  margin-right: 10px;
+}
+
+.app__submit {
+  width: 100%;
+  padding: 10px;
+  width: 100%;
+  /* margin: 0 auto 0 40px; */
+  /* margin: 0 40px 0 auto; */
+  /* margin: 0 auto; */
+  /* background-color: transparent; */
+  /* border: 1px solid #292929; */
+  display: block;
+  background: #1e7299;
+  background: linear-gradient(to bottom, #1e7299 0%, #096b99 44%, #006699 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e7299', endColorstr='#006699',GradientType=0 );
+  border: 1px solid #666;
+  border-bottom: 2px solid #666;
+  border-right: 2px solid #666;
+  color: #fefefe;
+  font-weight: bold;
+}
